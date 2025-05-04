@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "SFProText";
+  src: url("font/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "SFProText";
+}
+ิbody {
+  height: 100vh;
+  font-family: "SFProText", Helvetica, Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #f2f4f7;
+}
+
+section {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+}
+.title-box {
+  width: 50%;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.title-box img {
+  width: auto;
+  height: 106px;
+  margin: -28px;
+}
+.title-box p {
+  font-size: 28px;
+}
+.right-box {
+  text-align: center;
+}
+.login-box {
+  padding: 1rem;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 396px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.input-box {
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 364px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.input-box:nth-of-type(2) {
+  margin-bottom: 18px;
+}
+.input-box input {
+  flex: 1;
+
+  font-size: inherit;
+  background: transparent;
+  border: none;
+}
+.input-box:focus-within {
+  border-color: #0866ff;
+  box-shadow: 0 0 2px #e7f3ff;
+}
+.input-box input:focus {
+  outline: none;
+}
+.btn-login {
+  width: 364px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #0866ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+.btn-login:hover {
+  background: #365899;
+}
+.create-page:hover,
+.forgotten:hover {
+  text-decoration: underline;
+}
+.forgotten {
+  font-size: 14px;
+  color: #0866ff;
+  font-weight: 500;
+  margin: 1rem 0 20px 0;
+}
+.line {
+  width: 100%;
+  border-bottom: 1px solid #dadde1;
+}
+.btn-create-new-account {
+  width: auto;
+  margin-top: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+.btn-create-new-account:hover {
+  background: #36a420;
+}
+.right-box p {
+  font-size: 14px;
+}
+.create-page {
+  color: #000;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f4f7;
+  }
+  .title-box * {
+    margin-bottom: 2rem;
+  }
+  .main-section {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .title-box {
+    max-width: 396px;
+    text-align: center;
+    width: 100%;
+  }
+  .title-box p {
+    font-size: 24px;
+    margin-top: 1.5rem;
+  }
+  .right-box {
+    width: 100%;
+  }
+}
